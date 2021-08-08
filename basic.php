@@ -15,6 +15,14 @@
         $num2 = 30;
         $sum = $num1 + $num2;
         echo "<p> Total of two given numbers: $sum </p>";
+        $phrase = "Dog is my favourite animal.";
+        echo $phrase;
+        echo strtolower($phrase);
+        echo strtoupper($phrase);
+        echo strlen($phrase);
+        echo $phrase[4];
+        echo str_replace("Dog","Cat",$phrase);
+        echo substr($phrase, 20,6);
     ?>
 </body>
 </html>
