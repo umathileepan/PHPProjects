@@ -21,8 +21,16 @@
         echo strtoupper($phrase);
         echo strlen($phrase);
         echo $phrase[4];
-        echo str_replace("Dog","Cat",$phrase);
-        echo substr($phrase, 20,6);
+        echo "<p> Replace Cat instead of Dog: " . str_replace("Dog","Cat", $phrase) . "</p>"; 
+        echo "<p> Substring: " . substr($phrase, 20,6) . "</p>";
+        echo "<p> 2 power of 4: </p>" . pow(2, 4);
+        echo "<p> Square number: " . sqrt(144) . "</p>";
+        echo max(3,34);
+        echo min(9,3);
+        echo round(3.7);
+        echo floor(3.9);
+        echo ceil(4.2);
+        
     ?>
 </body>
 </html>
