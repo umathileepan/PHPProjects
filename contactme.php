@@ -32,16 +32,18 @@
         <input type="submit">
     </form>
     <?php 
-        $firstName = $_POST["firstName"];
-        $lastName = $_POST["lastName"];
-        $conactNo = $_POST["contactNo"];
-        $email = $_POST["email"];
-        $password = $_POST["password"];
-        if($firstName!=null && $lastName!=null && $conactNo!=null && $email!=null)
-            echo $firstName;
-            echo $lastName;
-            echo $conactNo;
-            echo $email;
+        if($_POST["firstName"] != null && $_POST["lastName"] != null && $_POST["contactNo"] != null && $_POST["email"] != null){
+            $firstName = $_POST["firstName"];
+            $lastName = $_POST["lastName"];
+            $conactNo = $_POST["contactNo"];
+            $email = $_POST["email"];
+            $password = $_POST["password"];
+         
+             echo $firstName;
+             echo $lastName;
+             echo $conactNo;
+             echo $email;
+        }
     ?>
 </body>
 </html>
