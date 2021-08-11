@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Contact Me Form</h1>
-    <form action="contactme.php" method="post">
+    <form action="contactme.php" method="POST">
         <label for="firstName">First Name: </label>
         <input type="text" id="firstName" name="firstName">
         <br>
@@ -32,18 +32,18 @@
         <input type="submit">
     </form>
     <?php 
-        if($_POST["firstName"] != null && $_POST["lastName"] != null && $_POST["contactNo"] != null && $_POST["email"] != null){
-            $firstName = $_POST["firstName"];
-            $lastName = $_POST["lastName"];
-            $conactNo = $_POST["contactNo"];
-            $email = $_POST["email"];
-            $password = $_POST["password"];
-         
-             echo $firstName;
-             echo $lastName;
-             echo $conactNo;
-             echo $email;
+               
+        if(isset($_POST["submit"])){
+            $firstName = $_POST['firstName'];
+            $lastName = $_POST['lastName'];
+            $conactNo = $_POST['contactNo'];
+            $email = $_POST['email'];
+            $password = $_POST['password'];
         }
+        echo $firstName;
+        echo $lastName;
+        echo $conactNo;
+        echo $email;
     ?>
 </body>
 </html>

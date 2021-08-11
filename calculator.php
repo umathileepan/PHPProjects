@@ -13,11 +13,11 @@
         <input type="submit">
     </form>
        Answer <?php 
-                $num1 = $_GET["num1"];
-                $num2 = $_GET["num2"];
-                if($num1 != null && $num2 != null){
-                $sum = $num1 + $num2;
-                echo $sum;
+                if(isset($_GET["num1"]) && $_GET["num2"]){
+                    $num1 = $_GET["num1"];
+                    $num2 = $_GET["num2"];
+                    $sum = $num1 + $num2;
+                    echo $sum;
                 }
                 ?>
 </body>
