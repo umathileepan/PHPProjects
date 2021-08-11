@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Contact Me Form</h1>
-    <form action="contactme.php" method="POST">
+    <form action="contactme.php" method="post">
         <label for="firstName">First Name: </label>
         <input type="text" id="firstName" name="firstName">
         <br>
@@ -29,21 +29,44 @@
         <input type="password" id="password" name="password">
         <br>
         <hr>
+        HTML <input type="checkbox" name="course[]" value="HTML">
+        <br>
+        CSS <input type="checkbox" name="course[]" value="CSS">
+        <br>
+        JavaScript <input type="checkbox" name="course[]" value="JavaScript">
+        <br>
+        PHP <input type="checkbox" name="course[]" value="PHP">
+        <br>
+        My SQL <input type="checkbox" name="course[]" value="My SQL">
+        <br>
+        Node <input type="checkbox" name="course[]" value="Node">
+        <br>
+        Angular <input type="checkbox" name="course[]" value="Angular">
+        <br>
+        
+        React <input type="checkbox" name="course[]" value="React">
+        <br>
+        <hr>
         <input type="submit">
     </form>
     <?php 
-               
-        if(isset($_POST["submit"])){
+           
+      // $firstName = $lastName = $conactNo = $email = $password = $course = '';
+
+      // if(isset($_POST["submit"])){
             $firstName = $_POST['firstName'];
             $lastName = $_POST['lastName'];
             $conactNo = $_POST['contactNo'];
             $email = $_POST['email'];
             $password = $_POST['password'];
-        }
+            $course = $_POST["course"];
+       // }
+
         echo $firstName;
         echo $lastName;
         echo $conactNo;
         echo $email;
+        echo $course[0];
     ?>
 </body>
 </html>
