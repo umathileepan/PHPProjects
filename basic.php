@@ -30,6 +30,12 @@
         echo round(3.7);
         echo floor(3.9);
         echo ceil(4.2);
+
+        
+        $title = "Fairy Tale";
+        $author = "Danial Steel";
+        $wordCount = 3000;
+        include "book.php";
         
     ?>
 </body>
