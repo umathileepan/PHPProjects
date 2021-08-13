@@ -16,6 +16,7 @@
             var $title;
             var $author;
             var $pages;
+            private $rating;
 
             function __construct($btitle,$bAuthor,$bPages){
                 $this->title=$btitle;
@@ -23,10 +24,19 @@
                 $this->pages=$bPages;
             }
 
+            function getRating() {
+                return $this->rating;
+            }
+
+            function setRating($brating) {
+                $this->rating = $brating;
+            }
+
         }
 
         $book1 = new Book("Magic world","Harry Potter",300);
-        echo $book1->title;
+        $book1->setRating("A");
+        echo $book1->getRating();
         
     ?>
 </body>
