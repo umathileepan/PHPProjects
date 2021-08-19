@@ -14,6 +14,7 @@
         $num1 = 20;
         $num2 = 30;
         $sum = $num1 + $num2;
+        var_dump($num1);
         echo "<p> Total of two given numbers: $sum </p>";
         $phrase = "Dog is my favourite animal.";
         echo $phrase;
